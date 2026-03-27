@@ -1,0 +1,35 @@
+monitor temperature and humidity   (WEEK -5)
+
+
+pin 1 of the sensor - +5V (left)
+pin 2  - ur DHTPIN
+pin 4 - GROUND  (right)
+
+
+#include "DHT.H"
+#define DHTPIN 2
+#define 
+DHT11.dhtll(2);
+void setup(){
+Serial.begin(9600);
+}
+void loop(){
+int temperature = 0;
+int humidity =0;
+int result = dht11.read Temperature Humidity(temperature,humidity);
+if(result==0){
+Serial.println("Temperature");
+Serial.println("temperature");
+Serial.println("OC/ Humidity");
+Serial.println("%");
+}
+else{
+Serial.println("DHT11::get Error String(result));
+}
+}
+
+
+
+
+
+
