@@ -1,0 +1,53 @@
+(WEEK - 2) Familiarization with Arduino and Raspberry
+
+step:
+
+1) after download Arduino IDE __unzip the folder__inside that folder see application icon __ double click on that icon
+2) once software start __I have create project, open existing project  click new ____  
+  |___if open existing project __select file__examples__basics__blick__ now we are select just basic blick led on off
+3) avoid error while upload ur program to board select correct name must match board connected to ur computer 
+  goto tools__select board __select Arduino UNO_
+4) goto tools__serial port ___select COM3 __one you disconnecr ur board , again re connect again do this process 
+5) type code and compile and upload
+
+
+vcc - 5V
+GND - GND
+Do - 2
+Ao - Ao
+
+LED
+  +(long) - 13
+  -(short) -  ground
+speaker
+  +  -  8
+  -  -  ground
+
+code:
+
+
+const int Smokesensorpin=Ao;
+const int buzzerpin=8;
+const int Ledpin=13;
+int smokeThreshold=300;
+void setup(){
+Serial.begin(9600);
+PinMode(buzzerpin,OUTPUT);
+PinMode(Ledpin,OUTPUT);
+}
+void loop(){
+int smokevalue=analog Read(Smokesnesorpin);
+Serial.print("Smoke Sensor Value : ");
+Serial.prin("Smoke Value :");
+if(smokevalue > smokeThreshold){
+digitlWrite(buzzerpin,HIGH);
+digitalWrite(Ledpin,HIGH);
+Serial.print("smoke detected buzzer and Led on!");
+}
+else{
+digitlWrite(buzzerpin,LOW);
+digitalWrite(Ledpin,HIGH);
+Serial.print(" no smoke detected buzzer and Led on!");
+}
+delay(1000);
+}
