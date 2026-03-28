@@ -4,6 +4,12 @@ Rx - 8
 Tx-9
 Gnd- GND
 VCC - 5.5V
+
+arduino UNO
+android phone that has blutooth
+HC-05 bluetooth mode
+USB cable
+jumper wires
 --------------------------------------------------
 #include <SoftwareSerial.h>
 SoftwareSerial Bluetooth(8, 9); // RX, TX
