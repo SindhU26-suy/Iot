@@ -1,0 +1,47 @@
+Install Arduino and Raspberry Pi(WEEK - 1)
+
+Arduino is a platform that makes it easy for you to build projects using electronics.
+ IoT is a way of using electronics - to make electronic modules talk to each other remotely
+and wirelessly (often using a Cloud) to solve problems.
+ Now, Arduino can also help you easily build IoT projects in two ways: Using traditional
+Arduino boards and attaching communication breakout modules (like nRF Bluetooth,
+WiFi, LoRA, GSM, etc) to them.
+ Arduino is a micro controller that can be connected to one or more sensors and help you
+capture the data or information and then pass it on to processor. If you know the full stack
+of IoT then you should also look at Raspberry.
+ RaspPi is a microprocessor so the basic difference between Arduino and RasPi is that
+RaspPi is controller plus processor and Arduino is just a micro controller.
+
+Arduino:
+
+1) goto the aurdino website__ click download link__ open download page
+2) goto folders__ extract the zip file __copy folder paste your suitable place
+3) read the Arduino license agreement and click the i agree button
+
+raspberry pi:
+
+1) goto to raspberry website__click on download ___click on install__ after install click finish button
+
+
+steps:
+
+goto Arduino select file__new__select tools__select broad__Arduino UNO __again select port__COM1__type program
+
+AO - Ao
+D - 2
+Vcc - 5V
+ground - ground
+LED groud - 13
+
+code:
+
+void setup(){
+Pinmode(LED-13,OUTPUT);
+}
+void loop(){
+digitalWrite(LED-13,HIGH);
+delay(1000);
+digitalWrite(LED-13,Low);
+delay(1000);
+}
+
