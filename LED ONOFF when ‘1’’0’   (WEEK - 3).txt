@@ -6,7 +6,7 @@ Gnd- GND
 VCC - 5.5V
 --------------------------------------------------
 #include <SoftwareSerial.h>
-SoftwareSerial Bluetooth(10, 9); // RX, TX
+SoftwareSerial Bluetooth(8, 9); // RX, TX
 int LED = 13; // the on-board LED
 int Data; // the data received
  
