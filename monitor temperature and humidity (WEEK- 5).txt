@@ -5,6 +5,10 @@ pin 1 of the sensor - +5V (left)
 pin 2  - ur DHTPIN
 pin 4 - GROUND  (right)
 
+arduino UNO
+DHT11/DHT22 sensors
+bread board
+jumper wires
 
 #include "DHT.H"
 #define DHTPIN 2
